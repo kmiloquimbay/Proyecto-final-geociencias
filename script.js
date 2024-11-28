@@ -139,4 +139,8 @@ function startGame() {
 // Actualiza las dimensiones del contenedor cuando la ventana se redimensiona
 window.addEventListener("resize", updateContainerDimensions);
 // Comienza el juego
+document.getElementById("iniciar").addEventListener("click", function() {
+    document.getElementById("rules").style.display = "none";
+    document.getElementById("iniciar").style.display = "none"; 
 startGame();
+});
